@@ -36,14 +36,20 @@ alias zshconfig="vim ~/.zshrc"
 alias ports='sudo lsof -i -P | grep -i "listen"' # list open ports
 alias f='find .-name'
 alias h='htop'
+alias c='clear'
+alias bp='bpython'
 
-# path stuff
-#
+# environment
+export EDITOR='vim'
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+# grep
+export GREP_OPTIONS='--color=auto'
+# python
+export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
 
 # source some things
 source $ZSH/oh-my-zsh.sh
-echo "export WORKON_HOME=$HOME/.virtualenvs"
+export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper.sh
 
 
