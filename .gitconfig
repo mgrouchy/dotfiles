@@ -1,0 +1,36 @@
+[user]
+	name = Mike Grouchy
+	email = mgrouchy@gmail.com
+
+[alias]
+    lo  = log --oneline
+    lwg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
+	st = status
+	p = push
+	ra = remote add
+	rrm = remote rm
+	smupdate = submodule foreach git pull origin master --recurse-submodules
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+
+[color "branch"]
+	current = yellow reverse
+	remote = green bold
+	local = blue bold
+
+[color "diff"]
+	meta = blue bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[core]
+	editor = vim
+
+[web]
+	browser = open
+
+# vim: noexpandtab
