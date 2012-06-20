@@ -10,6 +10,18 @@
 	ra = remote add
 	rrm = remote rm
 	smupdate = submodule foreach git pull origin master --recurse-submodules
+	d = diff
+	st = status
+	s = status
+	ci = commit
+	co = checkout
+	br = branch
+	last = log -1 # show the commit message of HEAD
+	patch = add --patch # add hunks of code interactively
+	rom = rebase origin/master  #rebase against origin/master
+
+	# fetch from all remotes and reset to origin/master
+	fresh = !git fetch --all && git reset --hard origin/master -
 
 [color]
 	diff = auto

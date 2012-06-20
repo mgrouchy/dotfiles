@@ -1,9 +1,9 @@
 # path to zsh
 ZSH=$HOME/.oh-my-zsh
+# zsh settings
+# turn off autocorrect
 # zsh theme
 ZSH_THEME="kennethreitz"
-# zsh options
-unsetopt correct_all
 # oh-my-zsh plugins
 plugins=(git, brew, django, github, heroku, osx, pip, python, redis-cli)
 
@@ -47,9 +47,10 @@ export GREP_OPTIONS='--color=auto'
 # python
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
 
-# source some things
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
+
+# source some things
 export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper.sh
-
 
