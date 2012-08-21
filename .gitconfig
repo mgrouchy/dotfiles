@@ -39,6 +39,9 @@
 	old = red bold
 	new = green bold
 
+[push]
+	default = current
+
 [core]
 	editor = vim
 
