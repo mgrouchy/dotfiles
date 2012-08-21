@@ -54,3 +54,5 @@ unsetopt correct_all
 export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper.sh
 
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
