@@ -22,6 +22,7 @@
 
 	# fetch from all remotes and reset to origin/master
 	fresh = !git fetch --all && git reset --hard origin/master -
+	ismerged = branch -r --merged master
 
 [color]
 	diff = auto
