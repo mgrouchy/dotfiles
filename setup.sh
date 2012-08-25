@@ -2,18 +2,6 @@
 
 #this totally doesn't work anymore
 
-echo "Creating dotfiles backup directory ~/.dotfiles_backup ..."
-  mkdir ~/.dotfiles_backup
-
-cd ~/.dotfiles
-
-echo "cleaning up old dotfiles and moving to backup directory ..."
-  mv ~/.bashrc ~/.dotfiles_backup/
-  mv ~/.bash_profile ~/.dotfiles_backup/
-  mv ~/.vimrc ~/.dotfiles_backup/
-  mv ~/.gvimrc ~/.dotfiles_backup/
-  mv ~/.gitconfig ~/.dotfiles_backup/
-
 echo "Symlinking new dotfiles ..."
   ln -s ~/.dotfiles/.bashrc ~/.bashrc
   ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
@@ -21,6 +9,10 @@ echo "Symlinking new dotfiles ..."
   ln -s ~/.dotfiles/vim/gvimrc ~/.gvimrc
   ln -s ~/.dotfiles/vim ~/.vim
   ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+  ln -s ~/.dotfiles/.zshrc ~/.zshrc
+  ln -s ~/.dotfiles/.zshenv ~/.zshenv
+  ln -s ~/.dotfiles/.zshfunc ~/.zshfunc
+  ln -s ~/.dotfiles/.zshalias ~/.zshalias
 
 echo "Updating git Submodules..."
   cd ~/.dotfiles

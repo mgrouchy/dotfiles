@@ -1,7 +1,6 @@
+# These configs are meant to be used with oh-my-zsh
 # path to zsh
 ZSH=$HOME/.oh-my-zsh
-# zsh settings
-# turn off autocorrect
 # zsh theme
 ZSH_THEME="kennethreitz"
 # oh-my-zsh plugins
@@ -32,20 +31,9 @@ zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zshcache
 
 # aliases
-alias zshconfig="vim ~/.zshrc"
-alias ports='sudo lsof -i -P | grep -i "listen"' # list open ports
-alias f='find .-name'
-alias h='htop'
-alias c='clear'
-alias bp='bpython'
-
-# environment
-export EDITOR='vim'
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-# grep
-export GREP_OPTIONS='--color=auto'
-# python
-export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
+source ~/.zshalias
+#functions
+source ~/.zshfunc
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -54,5 +42,4 @@ unsetopt correct_all
 export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper.sh
 
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 

@@ -1,0 +1,23 @@
+export EDITOR='vim'
+
+alias zshconfig="vim ~/.zshrc"
+alias ports='sudo lsof -i -P | grep -i "listen"' # list open ports
+alias f='find .-name'
+alias h='htop'
+alias c='clear'
+alias bp='bpython'
+alias v='vim'
+alias g='git'
+alias b='brew install'
+
+#better directory navigation
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+
+
+#django specific
+alias runserver='python manage.py runserver'
+alias startapp='python manage.py startapp'
+alias startproject='djangoadmin.py startproject'
+
