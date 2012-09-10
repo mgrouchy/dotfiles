@@ -14,8 +14,16 @@ echo "Symlinking new dotfiles ..."
   ln -s ~/.dotfiles/.zshfunc ~/.zshfunc
   ln -s ~/.dotfiles/.zshalias ~/.zshalias
 
-echo "Updating git Submodules..."
+echo "Updating Dotfiles git Submodules..."
   cd ~/.dotfiles
+  git submodule init
+  git submodule update
   git submodule foreach git pull origin master --recurse-submodules
+echo "Updating Vim git submodules..."
+  cd ~/.dotfiles/vim/
+  git submodule init
+  git submodule update
+  git submodule foreach git pull origin master --recurse-submodules
+
 
 echo "We are done! Enjoy your environment!"
