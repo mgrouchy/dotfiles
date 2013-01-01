@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 # zsh theme
 ZSH_THEME="kennethreitz"
 # oh-my-zsh plugins
-plugins=(git, brew, django, github, heroku, osx, pip, python, redis-cli)
+plugins=(git, brew, django, github, heroku, osx, pip, python, redis-cli, rsync)
 
 # history
 HISTFILE=~/.history
