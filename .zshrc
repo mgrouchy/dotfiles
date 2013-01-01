@@ -41,6 +41,4 @@ unsetopt correct_all
 # source some things
 export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper_lazy.sh
-
-
-
+#export PYTHONDONTWRITEBYTECODE=1
