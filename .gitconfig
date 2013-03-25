@@ -49,4 +49,6 @@
 [web]
 	browser = open
 
+[remote "origin"]
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 # vim: noexpandtab
