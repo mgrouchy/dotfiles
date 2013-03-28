@@ -24,6 +24,4 @@ echo "Updating Vim git submodules..."
   git submodule init
   git submodule update
   git submodule foreach git pull origin master --recurse-submodules
-
-
 echo "We are done! Enjoy your environment!"
