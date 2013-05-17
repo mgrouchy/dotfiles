@@ -7,7 +7,6 @@ alias h='htop'
 alias c='clear'
 alias bp='bpython'
 alias v='vim'
-alias mv='mvim'
 alias g='git'
 alias b='brew install'
 

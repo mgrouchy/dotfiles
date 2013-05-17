@@ -50,3 +50,5 @@
 	browser = open
 
 # vim: noexpandtab
+[pull]
+	rebase = true
