@@ -41,5 +41,6 @@ unsetopt correct_all
 # source some things
 export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper_lazy.sh
+export VIRTUAL_ENV_DISABLE_PROMPT=true #fix prompt in powerline
 #export PYTHONDONTWRITEBYTECODE=1
 source /Library/Python/2.7/site-packages/Powerline-beta-py2.7.egg/powerline/bindings/zsh/powerline.zsh
