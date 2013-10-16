@@ -44,3 +44,4 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 export VIRTUAL_ENV_DISABLE_PROMPT=true #fix prompt in powerline
 #export PYTHONDONTWRITEBYTECODE=1
 source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+export POST=8000

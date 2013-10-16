@@ -51,4 +51,4 @@
 
 # vim: noexpandtab
 [pull]
-	rebase = true
+#	rebase = true

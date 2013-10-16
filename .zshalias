@@ -23,3 +23,4 @@ alias runserver='python manage.py runserver'
 alias startapp='python manage.py startapp'
 alias startproject='djangoadmin.py startproject'
 
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
