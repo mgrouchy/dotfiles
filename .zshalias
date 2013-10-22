@@ -8,6 +8,9 @@ alias c='clear'
 alias bp='bpython'
 alias v='vim'
 alias g='git'
+
+# Recursively delete `.pyc` files
+alias rmpyc="find . -type f -name '*.pyc' -ls -delete"
 alias b='brew install'
 
 #better directory navigation
