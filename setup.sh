@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
+export HOMEBREW_CASK_OPTS = "--appdir=/Applications"
 #install homebrew
 #ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 #install homebrew things
 brew install wget
-brew install macvim
 brew install libevent
 brew install htop
 brew install rabbitmq
@@ -19,9 +19,10 @@ brew install ack
 brew install jpg
 brew install redis
 brew install readline
-
-echo "Installing Iterm2"
-wget http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip -P ~/Downloads/
+brew tap phinze/homebrew-cask
+brew cask install iterm2
+brew_install reattach-to-user-namespace
+brew install macvim
 
 #mv ~/Downloads/iterm2/iterm2.app /Applications/
 
