@@ -114,6 +114,9 @@ def bootstrap(ssh_keys=None):
     run('ln -s .zshenv ~/.zshenv')
     run('ln -s .zshrc ~/.zshrc')
 
+    print "Copying PIP configuration"
+    run('ln -s .pip ~/.pip')
+
     # optionally symlink ssh keys
     if ssh_keys:
         print "Symlinking SSH directory"
