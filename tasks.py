@@ -13,7 +13,7 @@ CASK_APPS = ['iterm2']
 PIP_APPS = ['bpython', '--user git+git://github.com/Lokaltog/powerline',
             'virtualenvwrapper']
 
-
+@task
 def pip_install_system(library):
     run('sudo pip install %s' % library)
 
@@ -26,6 +26,8 @@ def install_python_env():
             pip_install_system(app)
         except:
             pass
+
+python = Collection(pip_install_system, install_python_env)
 
 
 @task
@@ -61,7 +63,10 @@ def brew_cask_install(appname):
     run('brew cask install %s' % appname)
 
 
-def install_font(fontname):
+brew = Collection(install_brew, install_brew_cask, brew_install, brew_cask_install)
+
+@task
+def copy_font(fontname):
     run('sudo cp fonts/%s /Library/Fonts/' % fontname)
 
 
@@ -73,6 +78,9 @@ def install_fonts():
 @task
 def print_python_versions():
     run('cd /usr/bin/; ls -la | grep python')
+
+
+fonts = Collection(install_fonts, copy_font)
 
 
 @task
@@ -124,3 +132,6 @@ def bootstrap(ssh_keys=None):
 
     print "Setting up osx defaults"
     run('./.osx')
+
+
+ns = Collection(bootstrap, fonts=fonts, python=python, brew=brew)
