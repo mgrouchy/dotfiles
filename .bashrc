@@ -1,5 +1,4 @@
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/Developer/usr/bin/:$PATH"
-export NODE_PATH=/usr/local/lib/node_modules
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
