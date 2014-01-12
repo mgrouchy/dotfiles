@@ -48,3 +48,4 @@ export PORT=8000
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="~/Library/Python/2.7/bin/:~/Library/Python/2.7/lib/:$PATH"
