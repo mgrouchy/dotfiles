@@ -11,18 +11,20 @@
 	rrm = remote rm
 	smupdate = submodule foreach git pull origin master --recurse-submodules
 	d = diff
+	ds = diff --staged
 	st = status
 	s = status
 	ci = commit
 	co = checkout
+	cl = clone
 	br = branch
 	last = log -1 # show the commit message of HEAD
 	patch = add --patch # add hunks of code interactively
 	rom = rebase origin/master  #rebase against origin/master
-
 	# fetch from all remotes and reset to origin/master
 	fresh = !git fetch --all && git reset --hard origin/master -
 	ismerged = branch -r --merged master
+
 
 [color]
 	diff = auto
@@ -41,7 +43,7 @@
 	new = green bold
 
 [push]
-	default = current
+	default = tracking
 
 [core]
 	editor = vim
@@ -52,3 +54,5 @@
 # vim: noexpandtab
 [pull]
 #	rebase = true
+[help]
+	autocorrect = 1
