@@ -1,1 +1,3 @@
 *.pyc
+.pip/cache/
+.pip/pip.log
