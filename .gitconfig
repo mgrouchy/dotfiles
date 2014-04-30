@@ -1,58 +1,59 @@
 [user]
-	name = Mike Grouchy
-	email = mgrouchy@gmail.com
+    name = Mike Grouchy
+    email = mgrouchy@gmail.com
 
 [alias]
     lo  = log --oneline
     lwg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
-	st = status
-	p = push
-	ra = remote add
-	rrm = remote rm
-	smupdate = submodule foreach git pull origin master --recurse-submodules
-	d = diff
-	ds = diff --staged
-	st = status
-	s = status
-	ci = commit
-	co = checkout
-	cl = clone
-	br = branch
-	last = log -1 # show the commit message of HEAD
-	patch = add --patch # add hunks of code interactively
-	rom = rebase origin/master  #rebase against origin/master
-	# fetch from all remotes and reset to origin/master
-	fresh = !git fetch --all && git reset --hard origin/master -
-	ismerged = branch -r --merged master
+    st = status
+    p = push
+    ra = remote add
+    rrm = remote rm
+    smupdate = submodule foreach git pull origin master --recurse-submodules
+    d = diff
+    ds = diff --staged
+    st = status
+    s = status
+    ci = commit
+    co = checkout
+    cl = clone
+    br = branch
+    last = log -1 # show the commit message of HEAD
+    patch = add --patch # add hunks of code interactively
+    rom = rebase origin/master  #rebase against origin/master
+    # fetch from all remotes and reset to origin/master
+    fresh = !git fetch --all && git reset --hard origin/master -
+    ismerged = branch -r --merged master
 
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+    diff = auto
+    status = auto
+    branch = auto
 
 [color "branch"]
-	current = yellow reverse
-	remote = green bold
-	local = blue bold
+    current = yellow reverse
+    remote = green bold
+    local = blue bold
 
 [color "diff"]
-	meta = blue bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
 
 [push]
-	default = tracking
+    default = tracking
 
 [core]
-	editor = vim
+    editor = vim
 
 [web]
-	browser = open
+    browser = open
 
-# vim: noexpandtab
 [pull]
-#	rebase = true
+    rebase = true
+
 [help]
-	autocorrect = 1
+    autocorrect = 1
+
