@@ -27,3 +27,5 @@ alias startapp='python manage.py startapp'
 alias startproject='djangoadmin.py startproject'
 
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+
+alias pipup='pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U'

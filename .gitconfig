@@ -43,7 +43,7 @@
 	new = green bold
 
 [push]
-	default = tracking
+	default = current
 
 [core]
 	editor = vim
