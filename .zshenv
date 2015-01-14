@@ -5,7 +5,7 @@ export GREP_OPTIONS='--color=auto'
 # python
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
 # postgres-app
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 # golang
 export GOROOT=/usr/local/go/
 export GOPATH=$HOME/.go
