@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 # zsh theme
 ZSH_THEME="kennethreitz"
 # oh-my-zsh plugins
-plugins=(git, brew, django, github, heroku, osx, pip, python, redis-cli, rsync)
+plugins=(gitfast, brew, django, github, heroku, osx, pip, python, redis-cli, rsync, celery, node, npm, vagrant, virtualenv, virtualenvwrapper)
 
 # history
 HISTFILE=~/.history
@@ -43,7 +43,7 @@ export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 export VIRTUAL_ENV_DISABLE_PROMPT=true #fix prompt in powerline
 #export PYTHONDONTWRITEBYTECODE=1
-source /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 export PORT=8000
 
 ### Added by the Heroku Toolbelt
